@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Standard.Abstractions.IO;
 
-namespace UnitTestProject1
+namespace Standard.Abstractions.Tests
 {
     [TestClass]
     public class UnitTest1
@@ -14,7 +14,7 @@ namespace UnitTestProject1
             Assert.IsTrue(io.Directory.Exists("___test"));
             io.Directory.Delete("___test");
         }
-        
+
         [TestMethod]
         public void Directory_CanBeCreatedAndDeletedAndCorrectlyShowsItDoesntExist()
         {
