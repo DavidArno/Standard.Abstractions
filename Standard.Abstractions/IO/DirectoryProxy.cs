@@ -14,7 +14,6 @@ namespace Standard.Abstractions.IO
 
         public IEnumerable<string> EnumerateDirectories(string path) => Directory.EnumerateDirectories(path);
 
-
         public IEnumerable<string> EnumerateDirectories(string path, string searchPattern) =>
             Directory.EnumerateDirectories(path, searchPattern);
 

@@ -1,11 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net461</TargetFramework>
+    <TargetFramework>net47</TargetFramework>
+    <DependsOnNETStandard>true</DependsOnNETStandard>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MSTest.TestFramework" Version="1.1.18" />
+    <PackageReference Include="NETStandard.Library" Version="2.0.0" />
+    <PackageReference Include="NUnit" Version="3.7.1" />
     <PackageReference Include="SuccincT" Version="3.0.1" />
   </ItemGroup>
 
